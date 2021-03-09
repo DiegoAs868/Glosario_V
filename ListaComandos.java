@@ -1,10 +1,10 @@
 
 public class ListaComandos {
-	String comando [] = new String [22];
-    String descripcion [] = new String [22];
+	String comando [] = new String [27];
+    String descripcion [] = new String [27];
     
-	String tema[] = new String [22];
-	String descripcionTema[] = new String [22];
+	String tema[] = new String [27];
+	String descripcionTema[] = new String [27];
 
     ListaComandos(){
 
@@ -30,6 +30,11 @@ public class ListaComandos {
     comando[19] = "tail";
     comando[20] = "rm";
     comando[21] = "mv"; 
+  comando[22] = "grep";
+    comando[23] = "sed";
+    comando[24] = "nl";
+    comando[25] = "chown";
+    comando[26] = "gzip";
 
     descripcion[0]= "El comando pwd indica la dirección donde estamos ubicados";
     descripcion[1]= "Enlista los elmentos del del directorio actual o al que se le dirija";
@@ -53,7 +58,12 @@ public class ListaComandos {
    descripcion[19]= "este comando realiza todo lo contrario del comando head";
    descripcion[20]= "permite eliminar un archivo, especificando luego del comando el nombre del archivo con su extensión.";
    descripcion[21]= "permite movilizar un archivo de un directorio a otro.";
-   
+   descripcion[22]= "este comando permite localizar entre las líneas del documento si existe la palabra que le indiquemos.";
+   descripcion[23]= "este comando permite sustituir una palabra por otra en  Todo el flujo del documento a momento de mostrarse este Comando no modifica el archivo.";
+   descripcion[24]= "muestra el documento con la lineas enumeradas sin embargo no toma en cuenta las lineas vasias pero con algunas opciones podemos ver con mas detalles.";
+   descripcion[25]= "con este comando cambiamos al propietario del archivo con permisos de administrador..";
+   descripcion[26]= "con este comando cambiamos al propietario del archivo con permisos de administrador..con este comando seguido del nombre del archivo podremos comprimir el su tamaño en un archivo .gz"; 
+
     tema[0]="directorio";
     
     descripcionTema[0]="\n CREAR UN DIRECTORIO:\n     para crear un directorio utiliza\n     el siguientes"
